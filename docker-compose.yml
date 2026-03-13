@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: laravel-payment-api
+    container_name: payment-app
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+      - gateway-mock
+    networks:
+      - payment-network
+
+  db:
+    image: mysql:8.0
+    container_name: payment-db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: payment_gateway
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: root
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+    networks:
+      - payment-network
+
+  gateway-mock:
+    image: matheusprotzen/gateways-mock
+    container_name: gateway-mock
+    ports:
+      - "3001:3001"
+      - "3002:3002"
+    environment:
+      REMOVE_AUTH: "true"
+    networks:
+      - payment-network
+
+networks:
+  payment-network:
+    driver: bridge
