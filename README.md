@@ -128,9 +128,7 @@ PUT/PATCH /api/users/{user}
 DELETE /api/users/{user}
 
 
-# 👩‍💻 Desenvolvido por Fernanda Bicalho Lima
-
-# Desenvolvedora PHP | Laravel
+# 👩‍💻 Desenvolvido por Fernanda Bicalho Lima (Desenvolvedora PHP | Laravel)
 
 
 
