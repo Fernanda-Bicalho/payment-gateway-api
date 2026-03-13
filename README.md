@@ -1,7 +1,7 @@
 
 # Payment Gateway API
 
-API REST desenvolvida em Laravel para gerenciamento de:
+# API REST desenvolvida em Laravel para gerenciamento de:
 
 - Clientes
 
@@ -79,34 +79,48 @@ GET	/api/clients/{client}
 
 # Método Endpoint Descrição
 GET	/api/products	
-POST	/api/products	
+
+POST	/api/products
+
 GET	/api/products/{product}	
+
 PUT/PATCH	/api/products/{product}	
+
 DELETE	/api/products/{product}	
 
 # Gateways
 
 # Método Endpoint Descrição
 GET	/api/gateways	
+
 GET	/api/gateways/{gateway}	
-PATCH	/api/gateways/{gateway}/priority	
+
+PATCH	/api/gateways/{gateway}/priority
+
 PATCH	/api/gateways/{gateway}/toggle	
 
 # Transações
 
 # Método Endpoint Descrição
 POST	/api/purchase	
+
 GET	/api/transactions	
+
 GET	/api/transactions/{transaction}	
+
 POST	/api/transactions/{id}/refund	
 
 # Users
 
 # Método Endpoint Descrição
 GET	/api/users	
+
 POST	/api/users	
-GET	/api/users/{user}	
+
+GET	/api/users/{user}
+
 PUT/PATCH	/api/users/{user}	
+
 DELETE	/api/users/{user}	
 
 # Listar rotas da API
