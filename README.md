@@ -1,3 +1,159 @@
+
+# Payment Gateway API
+
+API REST desenvolvida em Laravel para gerenciamento de:
+
+- Clientes
+
+- Produtos
+
+- Gateways de pagamento
+
+- Transações
+
+- Usuários
+
+O sistema simula um processamento de pagamentos com múltiplos gateways, permitindo priorização e ativação/desativação de gateways.
+
+# Tecnologias Utilizadas
+
+- PHP 8+
+
+- Laravel
+
+- MySQL
+
+- Docker
+
+- REST API
+
+- JSON
+
+# Instalação
+
+# Clone o repositório:
+
+git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
+
+# Entre na pasta:
+
+cd payment-gateway-api
+
+# Instale as dependências:
+
+composer install
+
+# Copie o arquivo de ambiente:
+
+cp .env.example .env
+
+# Gere a chave da aplicação:
+
+php artisan key:generate
+
+Configure o banco de dados no .env.
+
+# Execute as migrations:
+
+php artisan migrate
+
+# Execute os seeders (se houver):
+
+php artisan db:seed
+
+# Inicie o servidor:
+
+php artisan serve
+
+# A API ficará disponível em:
+
+http://localhost:8000
+
+# Rotas da API Clients
+
+# Método Endpoint Descrição
+GET	/api/clients	
+GET	/api/clients/{client}	
+
+# Products
+
+# Método Endpoint Descrição
+GET	/api/products	
+POST	/api/products	
+GET	/api/products/{product}	
+PUT/PATCH	/api/products/{product}	
+DELETE	/api/products/{product}	
+
+# Gateways
+
+# Método Endpoint Descrição
+GET	/api/gateways	
+GET	/api/gateways/{gateway}	
+PATCH	/api/gateways/{gateway}/priority	
+PATCH	/api/gateways/{gateway}/toggle	
+
+# Transações
+
+# Método Endpoint Descrição
+POST	/api/purchase	
+GET	/api/transactions	
+GET	/api/transactions/{transaction}	
+POST	/api/transactions/{id}/refund	
+
+# Users
+
+# Método Endpoint Descrição
+GET	/api/users	
+POST	/api/users	
+GET	/api/users/{user}	
+PUT/PATCH	/api/users/{user}	
+DELETE	/api/users/{user}	
+
+# Listar rotas da API
+
+# Para visualizar todas as rotas disponíveis:
+
+php artisan route:list
+
+# Desenvolvido por Fernanda Bicalho Lima
+
+Desenvolvedora PHP | Laravel
+
+# GitHub
+https://github.com/Fernanda-Bicalho
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
