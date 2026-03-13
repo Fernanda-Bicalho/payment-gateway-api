@@ -80,36 +80,51 @@ Para visualizar todas as rotas disponíveis:
 # 👥 Clients
 
 GET /api/clients
+
 GET /api/clients/{client}
 
 # 📦 Products
 
 GET	 /api/products	
+
 POST /api/products
-GET	 /api/products/{product}	
+
+GET	 /api/products/{product}
+
 PUT/PATCH /api/products/{product}	
+
 DELETE /api/products/{product}
 
 # 💳 Gateways
 
-GET	/api/gateways	
+GET	/api/gateways
+
 GET	/api/gateways/{gateway}	
+
 PATCH /api/gateways/{gateway}/priority
+
 PATCH /api/gateways/{gateway}/toggle
 
 # 💰 Transactions
 
 POST /api/purchase	
+
 GET	/api/transactions	
+
 GET	/api/transactions/{transaction}	
+
 POST /api/transactions/{id}/refund
 
 # 👤 Users
 
 GET	/api/users	
+
 POST /api/users	
+
 GET	/api/users/{user}
+
 PUT/PATCH /api/users/{user}	
+
 DELETE /api/users/{user}
 
 
