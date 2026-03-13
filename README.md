@@ -79,56 +79,58 @@ Para visualizar todas as rotas disponíveis:
 
 # 👥 Clients
 
-GET /api/clients
+- GET /api/clients
 
-GET /api/clients/{client}
+- GET /api/clients/{client}
 
 # 📦 Products
 
-GET	 /api/products	
+- GET	 /api/products	
 
-POST /api/products
+- POST /api/products
 
-GET	 /api/products/{product}
+- GET	 /api/products/{product}
 
-PUT/PATCH /api/products/{product}	
+- PUT/PATCH /api/products/{product}	
 
-DELETE /api/products/{product}
+- DELETE /api/products/{product}
 
 # 💳 Gateways
 
-GET	/api/gateways
+- GET	/api/gateways
 
-GET	/api/gateways/{gateway}	
+- GET	/api/gateways/{gateway}	
 
-PATCH /api/gateways/{gateway}/priority
+- PATCH /api/gateways/{gateway}/priority
 
-PATCH /api/gateways/{gateway}/toggle
+- PATCH /api/gateways/{gateway}/toggle
 
 # 💰 Transactions
 
-POST /api/purchase	
+- POST /api/purchase	
 
-GET	/api/transactions	
+- GET /api/transactions	
 
-GET	/api/transactions/{transaction}	
+- GET /api/transactions/{transaction}	
 
-POST /api/transactions/{id}/refund
+- POST /api/transactions/{id}/refund
 
 # 👤 Users
 
-GET	/api/users	
+- GET /api/users	
 
-POST /api/users	
+- POST /api/users	
 
-GET	/api/users/{user}
+- GET /api/users/{user}
 
-PUT/PATCH /api/users/{user}	
+- PUT/PATCH /api/users/{user}	
 
-DELETE /api/users/{user}
+- DELETE /api/users/{user}
 
 
-# 👩‍💻 Desenvolvido por Fernanda Bicalho Lima (Desenvolvedora PHP | Laravel)
+# 👩‍💻 Desenvolvido por Fernanda Bicalho Lima
+
+# (Desenvolvedora PHP | Laravel)
 
 
 
