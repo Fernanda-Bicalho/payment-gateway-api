@@ -29,7 +29,7 @@ O sistema simula um processamento de pagamentos com múltiplos gateways, permiti
 
 - JSON
 
-# Instalação: Clone o repositório: 
+# Instalação: 
 
 - git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
 
@@ -37,7 +37,9 @@ O sistema simula um processamento de pagamentos com múltiplos gateways, permiti
 
 - cd payment-gateway-api
 
-# Instale as dependências: composer install
+# Instale as dependências: 
+
+- composer install
 
 # Copie o arquivo de ambiente: 
 
@@ -57,7 +59,9 @@ O sistema simula um processamento de pagamentos com múltiplos gateways, permiti
 
 - php artisan db:seed
 
-# Inicie o servidor: php artisan serve
+# Inicie o servidor: 
+
+- php artisan serve
 
 # A API ficará disponível em:
 
