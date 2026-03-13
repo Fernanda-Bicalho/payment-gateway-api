@@ -29,97 +29,113 @@ O sistema simula um processamento de pagamentos com múltiplos gateways, permiti
 
 - JSON
 
-# Instalação: Clone o repositório: git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
+# Instalação: Clone o repositório: 
 
-# Entre na pasta: cd payment-gateway-api
+- git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
+
+# Entre na pasta:
+
+- cd payment-gateway-api
 
 # Instale as dependências: composer install
 
-# Copie o arquivo de ambiente: cp .env.example .env
+# Copie o arquivo de ambiente: 
+
+- cp .env.example .env
 
 # Gere a chave da aplicação:
 
-php artisan key:generate
+- php artisan key:generate
 
-Configure o banco de dados no .env.
+- Configure o banco de dados no .env.
 
-# Execute as migrations: php artisan migrate
+# Execute as migrations:
 
-# Execute os seeders (se houver): php artisan db:seed
+- php artisan migrate
+
+# Execute os seeders (se houver): 
+
+- php artisan db:seed
 
 # Inicie o servidor: php artisan serve
 
-# A API ficará disponível em: http://localhost:8000
+# A API ficará disponível em:
+
+- http://localhost:8000
 
 # Rotas da API Clients
 
 # Método Endpoint Descrição
 
-GET	/api/clients
+- GET	/api/clients
 
-GET	/api/clients/{client}	
+-GET	/api/clients/{client}	
 
 # Products
 
 # Método Endpoint Descrição
 
-GET	/api/products	
+-GET	/api/products	
 
-POST	/api/products
+-POST	/api/products
 
-GET	/api/products/{product}	
+-GET	/api/products/{product}	
 
-PUT/PATCH	/api/products/{product}	
+-PUT/PATCH	/api/products/{product}	
 
-DELETE	/api/products/{product}	
+-DELETE	/api/products/{product}	
 
 # Gateways
 
 # Método Endpoint Descrição
 
-GET	/api/gateways	
+-GET	/api/gateways	
 
-GET	/api/gateways/{gateway}	
+-GET	/api/gateways/{gateway}	
 
-PATCH	/api/gateways/{gateway}/priority
+-PATCH	/api/gateways/{gateway}/priority
 
-PATCH	/api/gateways/{gateway}/toggle	
+-PATCH	/api/gateways/{gateway}/toggle	
 
 # Transações
 
 # Método Endpoint Descrição
 
-POST	/api/purchase	
+-POST	/api/purchase	
 
-GET	/api/transactions	
+-GET	/api/transactions	
 
-GET	/api/transactions/{transaction}	
+-GET	/api/transactions/{transaction}	
 
-POST	/api/transactions/{id}/refund	
+-POST	/api/transactions/{id}/refund	
 
 # Users
 
 # Método Endpoint Descrição
 
-GET	/api/users	
+-GET	/api/users	
 
-POST	/api/users	
+-POST	/api/users	
 
-GET	/api/users/{user}
+-GET	/api/users/{user}
 
-PUT/PATCH	/api/users/{user}	
+-PUT/PATCH	/api/users/{user}	
 
-DELETE	/api/users/{user}	
+-DELETE	/api/users/{user}	
 
 # Listar rotas da API
 
 # Para visualizar todas as rotas disponíveis: php artisan route:list
 
-# Desenvolvido por Fernanda Bicalho Lima
+# Desenvolvido por:
 
-Desenvolvedora PHP | Laravel
+-Fernanda Bicalho Lima
 
-# GitHub: https://github.com/Fernanda-Bicalho
+-Desenvolvedora PHP | Laravel
+
+# GitHub: 
+
+-https://github.com/Fernanda-Bicalho
 
 
 
