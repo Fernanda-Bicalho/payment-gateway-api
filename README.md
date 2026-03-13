@@ -1,150 +1,121 @@
 
-# Payment Gateway API
+# 💳 Payment Gateway API
 
-# API REST desenvolvida em Laravel para gerenciamento de:
+API REST desenvolvida em **Laravel** para gerenciamento de:
 
 - Clientes
-
 - Produtos
-
 - Gateways de pagamento
-
 - Transações
-
 - Usuários
 
-O sistema simula um processamento de pagamentos com múltiplos gateways, permitindo priorização e ativação/desativação de gateways.
+O sistema simula um **processamento de pagamentos com múltiplos gateways**, permitindo:
 
-# Tecnologias Utilizadas
+- Priorização de gateways
+- Ativação e desativação de gateways
+- Processamento de transações
+- Simulação de reembolso
+
+---
+
+# 🚀 Tecnologias Utilizadas
 
 - PHP 8+
-
 - Laravel
-
 - MySQL
-
 - Docker
-
 - REST API
-
 - JSON
 
-# Instalação: 
+---
+
+# 📦 Instalação
+
+Clone o repositório:
 
 - git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
 
-# Entre na pasta:
+Entre na pasta do projeto:
 
 - cd payment-gateway-api
 
-# Instale as dependências: 
+Instale as dependências:
 
 - composer install
 
-# Copie o arquivo de ambiente: 
+Copie o arquivo de ambiente:
 
 - cp .env.example .env
 
-# Gere a chave da aplicação:
+Gere a chave da aplicação:
 
 - php artisan key:generate
 
-- Configure o banco de dados no .env.
+Configure o banco de dados no arquivo .env.
 
-# Execute as migrations:
+Execute as migrations:
 
 - php artisan migrate
 
-# Execute os seeders (se houver): 
+Execute os seeders (se houver):
 
 - php artisan db:seed
 
-# Inicie o servidor: 
+Inicie o servidor:
 
 - php artisan serve
 
-# A API ficará disponível em:
+A API ficará disponível em:
 
 - http://localhost:8000
 
-# Rotas da API Clients
+# 📋 Listar Rotas da API
 
-# Método Endpoint Descrição
+Para visualizar todas as rotas disponíveis:
 
-- GET	/api/clients
+- php artisan route:list
 
--GET	/api/clients/{client}	
+# 📌 Rotas da API
 
-# Products
+# 👥 Clients
 
-# Método Endpoint Descrição
+GET /api/clients
+GET /api/clients/{client}
 
--GET	/api/products	
+# 📦 Products
 
--POST	/api/products
+GET	 /api/products	
+POST /api/products
+GET	 /api/products/{product}	
+PUT/PATCH /api/products/{product}	
+DELETE /api/products/{product}
 
--GET	/api/products/{product}	
+# 💳 Gateways
 
--PUT/PATCH	/api/products/{product}	
+GET	/api/gateways	
+GET	/api/gateways/{gateway}	
+PATCH /api/gateways/{gateway}/priority
+PATCH /api/gateways/{gateway}/toggle
 
--DELETE	/api/products/{product}	
+# 💰 Transactions
 
-# Gateways
+POST /api/purchase	
+GET	/api/transactions	
+GET	/api/transactions/{transaction}	
+POST /api/transactions/{id}/refund
 
-# Método Endpoint Descrição
+# 👤 Users
 
--GET	/api/gateways	
-
--GET	/api/gateways/{gateway}	
-
--PATCH	/api/gateways/{gateway}/priority
-
--PATCH	/api/gateways/{gateway}/toggle	
-
-# Transações
-
-# Método Endpoint Descrição
-
--POST	/api/purchase	
-
--GET	/api/transactions	
-
--GET	/api/transactions/{transaction}	
-
--POST	/api/transactions/{id}/refund	
-
-# Users
-
-# Método Endpoint Descrição
-
--GET	/api/users	
-
--POST	/api/users	
-
--GET	/api/users/{user}
-
--PUT/PATCH	/api/users/{user}	
-
--DELETE	/api/users/{user}	
-
-# Listar rotas da API
-
-# Para visualizar todas as rotas disponíveis: php artisan route:list
-
-# Desenvolvido por:
-
--Fernanda Bicalho Lima
-
--Desenvolvedora PHP | Laravel
-
-# GitHub: 
-
--https://github.com/Fernanda-Bicalho
+GET	/api/users	
+POST /api/users	
+GET	/api/users/{user}
+PUT/PATCH /api/users/{user}	
+DELETE /api/users/{user}
 
 
+# 👩‍💻 Desenvolvido por Fernanda Bicalho Lima
 
-
-
+# Desenvolvedora PHP | Laravel
 
 
 
