@@ -29,13 +29,11 @@ O sistema simula um processamento de pagamentos com múltiplos gateways, permiti
 
 - JSON
 
-# Instalação
-
-# Clone o repositório:
+# Instalação: Clone o repositório:
 
 git clone https://github.com/Fernanda-Bicalho/payment-gateway-api.git
 
-# Entre na pasta:
+# Entre na pasta: 
 
 cd payment-gateway-api
 
@@ -72,7 +70,8 @@ http://localhost:8000
 # Rotas da API Clients
 
 # Método Endpoint Descrição
-GET	/api/clients	
+GET	/api/clients
+
 GET	/api/clients/{client}	
 
 # Products
